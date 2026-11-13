@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口琴社活动简介</title>
+<style>
+html {
+    font-size: 100%;
+    min-height: 100%;
+    background: linear-gradient(-45deg, #e6f3ff, #f0f8ff, #eaf6ff, #f7fbff);
+    background-size: 400% 400%;
+    animation: bgMove 12s ease infinite;
+    position: relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+html::before,
+html::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+html::before {
+    top: 7%;
+    left: 3%;
+    width: clamp(80px,12vw,160px);
+    height: clamp(50px,8vw,100px);
+    background-image:
+        radial-gradient(circle at 20% 80%, #4a90e2 10px, transparent 11px),
+        linear-gradient(180deg, transparent 48%, #4a90e2 48%, #4a90e2 52%, transparent 52%),
+        radial-gradient(circle at 50% 60%, #5dade2 14px, transparent 15px),
+        radial-gradient(circle at 80% 70%, #85c1e9 10px, transparent 11px),
+        radial-gradient(circle at 35% 40%, #aed6f1 8px, transparent 9px);
+    background-size: 100% 100%;
+    opacity: 0.4;
+    transform: rotate(-6deg);
+}
+
+html::after {
+    top: 12%;
+    right: 5%;
+    width: clamp(70px,10vw,120px);
+    height: clamp(70px,10vw,120px);
+    background-image:
+        radial-gradient(circle at 30% 70%, #4a90e2 10px, transparent 11px),
+        radial-gradient(circle at 70% 60%, #5dade2 14px, transparent 15px),
+        radial-gradient(circle at 50% 40%, #85c1e9 8px, transparent 9px);
+    opacity: 0.35;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    left: 3%;
+    bottom: 6%;
+    width: clamp(130px,18vw,220px);
+    height: clamp(50px,7vw,80px);
+    z-index: -1;
+    background-image:
+        linear-gradient(180deg, transparent 48%, #4a90e2 48%, #4a90e2 52%, transparent 52%),
+        linear-gradient(180deg, transparent 40%, #5dade2 40%, #5dade2 60%, transparent 60%),
+        linear-gradient(180deg, transparent 30%, #85c1e9 30%, #85c1e9 70%, transparent 70%),
+        linear-gradient(180deg, transparent 40%, #5dade2 40%, #5dade2 60%, transparent 60%),
+        linear-gradient(180deg, transparent 48%, #4a90e2 48%, #4a90e2 52%, transparent 52%);
+    background-size: 100% 100%;
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+body::after {
+    content: "♫ ♪ ♩ ♬";
+    position: fixed;
+    right: 4%;
+    bottom: 5%;
+    font-size: clamp(16px, 2vw, 28px);
+    color: #4a90e2;
+    letter-spacing: clamp(6px,1.2vw,14px);
+    opacity: 0.25;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body{
+    margin: 0;
+    padding: 1vh 2vw;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "SimSun", "宋体", serif;
+    font-size: clamp(14px, 1.1vw + 0.6vh, 22px);
+    position: relative;
+}
+p {
+    margin: clamp(1.2rem,2.5vw,2.2rem) 0;
+    line-height:1.8;
+    text-indent:2em;
+}
+h1,h2,h3{
+    font-family: "SimHei","黑体",sans-serif;
+    font-weight:bold;
+}
+h1{
+    font-size: clamp(24px, 3vw + 1.5vh, 42px);
+}
+h2{
+    font-size: clamp(20px, 2.4vw + 1.2vh, 32px);
+}
+h3{
+    font-size: clamp(17px, 2vw + 1vh, 26px);
+}
+</style>
+</head>
+<body>
+<h1>口琴社活动简介</h1>
+<p>这里是点击图片跳转过来的活动介绍页面。</p>
+<h3>活动基本信息：</h3>
+<ul>
+<li>活动名称：口琴社校园草坪小型音乐会</li>
+<li>活动时间：2026年春季5月</li>
+<li>活动地点：图书馆前大草坪</li>
+</ul>
+<p>活动现场社员分别演奏复音口琴、布鲁斯十孔口琴、半音阶口琴曲目，有独奏、重奏、大合奏。现场氛围轻松自由，路过的同学也可以点歌，是社团每年最受欢迎的线下活动。零基础社员也拥有上台合奏的机会。</p>
+<p><a href="li-0227-work2.html">← 返回口琴社招新主页</a></p>
+</body>
+</html>
